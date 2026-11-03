@@ -17,3 +17,22 @@ body[data-page="order-policy"] .page-head,body[data-page="shipping"] .page-head,
 .admin-header{position:relative}.admin-header::after{content:'';width:52px;height:52px;background:url('assets/montranasor-symbol.png') center/contain no-repeat;opacity:.9;filter:drop-shadow(0 0 10px #fff9)}
 @media(max-width:850px){.site-header .wordmark-image{width:170px}.page-head::after{right:5vw;width:70px;height:70px}.hero::after{width:70px;height:70px}}
 @media(max-width:520px){.site-header .wordmark-image{width:145px}.site-footer .wordmark-image{width:210px}.page-head::after{top:auto;bottom:10px;right:5vw;width:48px;height:48px;transform:none}.hero::after{top:5%;right:6vw;width:52px;height:52px}}
+
+/* Header and product framing tuned to the supplied MONTRANASOR page references. */
+.site-header{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:clamp(12px,2vw,30px)}
+.header-left,.header-right{min-width:0;display:flex;align-items:center;gap:clamp(14px,2vw,30px)}
+.header-left{grid-column:1;justify-content:flex-start}
+.site-header>.wordmark{grid-column:2;grid-row:1;width:clamp(210px,19vw,270px);justify-self:center;z-index:2}
+.site-header .wordmark-image{width:100%;filter:brightness(2.15) contrast(1.24) drop-shadow(0 0 7px #fff7)}
+.header-right{grid-column:3;justify-content:flex-end}
+.secondary-nav{display:flex;align-items:center;gap:clamp(14px,2vw,30px);white-space:nowrap}
+.main-nav a,.secondary-nav a,.header-actions a{font:600 10px var(--body);letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
+.main-nav{gap:clamp(14px,2vw,28px)}
+.header-actions{gap:clamp(9px,1.4vw,18px)}
+.hero h1,.section-heading h2,.page-head h1,.display,h1.display,h2.display{font-family:var(--display);font-weight:500;letter-spacing:.22em}
+.product-title{font:500 12px var(--display);letter-spacing:.16em;text-transform:uppercase}
+.product-image{height:auto;min-height:0;aspect-ratio:3/4;background:#0b0b0b}
+.product-image img{inset:10px;width:calc(100% - 20px);height:calc(100% - 20px);object-fit:contain;object-position:center;filter:grayscale(1)}
+@media(max-width:1050px){.main-nav,.secondary-nav{gap:12px}.main-nav a,.secondary-nav a,.header-actions a{font-size:9px;letter-spacing:.08em}.site-header{padding-inline:2.5vw;gap:12px}.site-header>.wordmark{width:clamp(190px,21vw,230px)}}
+@media(max-width:850px){.site-header{grid-template-columns:40px minmax(0,1fr) auto;gap:8px}.header-left{grid-column:1;grid-row:1;display:block}.site-header>.wordmark{grid-column:1/-1;grid-row:1;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:170px}.header-right{grid-column:3;grid-row:1;gap:0}.secondary-nav{display:none}.site-header .menu-toggle{display:block;position:relative;z-index:4}.main-nav{display:none;position:absolute;top:74px;left:0;right:0;z-index:5;background:#080808;padding:20px;flex-direction:column;align-items:flex-start;border:1px solid #333}.main-nav.open{display:flex}.main-nav a{font-size:11px}.header-actions{gap:10px}}
+@media(max-width:520px){.site-header{height:66px;grid-template-columns:34px minmax(0,1fr) auto;padding-inline:4vw}.site-header>.wordmark{width:148px}.site-header .wordmark-image{width:100%}.header-actions a:first-child,.header-actions a:nth-child(2),.header-actions a:nth-child(3){display:none}.product-image{aspect-ratio:3/4}.product-image img{inset:7px;width:calc(100% - 14px);height:calc(100% - 14px)}.product-title{font-size:10px;letter-spacing:.12em}}
