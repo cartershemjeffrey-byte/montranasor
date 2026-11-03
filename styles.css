@@ -100,7 +100,7 @@ body[data-page="order-policy"] .page-head,body[data-page="shipping"] .page-head,
 /* Final header, image blend, and centered compass placement. */
 .site-header{height:104px}
 .site-header>.wordmark{width:clamp(230px,24vw,300px);height:100%;display:flex;align-items:center}
-.site-header .wordmark-image{width:100%;height:92px;max-height:92px;object-fit:contain;filter:brightness(2.25) contrast(1.3) drop-shadow(0 0 8px #fff8)}
+.site-header .wordmark-image{width:100%;height:100px;max-height:100px;object-fit:contain;filter:brightness(2.25) contrast(1.3) drop-shadow(0 0 8px #fff8)}
 body[data-page=""] .site-header{background:linear-gradient(180deg,#050505f2 0%,#050505a8 68%,#05050500 100%);border-bottom:0}
 body[data-page=""] #app .hero{margin-top:-104px;height:calc(42vw + 104px);min-height:494px;padding-top:calc(7.2vw + 104px);background-image:linear-gradient(180deg,#030303d8 0%,#03030368 16%,transparent 42%),linear-gradient(90deg,#0008 0%,#0002 40%,transparent 68%),linear-gradient(0deg,#05050540,transparent 60%),url('assets/home-hero-4k.jpg');background-position:center center;background-size:cover}
 body[data-page=""] #app .hero::after{content:none}
@@ -110,8 +110,8 @@ body[data-page=""] #app .hero::after{content:none}
 .editorial-copy .compass-mark,.culture-copy .compass-mark{width:62px;margin:0 auto 10px}
 .editorial-copy h2,.culture-copy h2{text-align:center}
 .culture-outro{background-image:url('assets/culture-outro-clean-4k.jpg')}
-@media(max-width:850px){.site-header{height:82px}.site-header>.wordmark{width:clamp(190px,32vw,260px)}.site-header .wordmark-image{height:74px;max-height:74px}body[data-page=""] #app .hero{margin-top:-82px;height:calc(58vw + 82px);min-height:452px;padding-top:calc(8vw + 82px)}.site-menu-panel{top:82px;height:calc(100vh - 82px)}.menu-backdrop{inset:82px 0 0}}
-@media(max-width:520px){.site-header{height:76px}.site-header>.wordmark{width:190px}.site-header .wordmark-image{height:68px;max-height:68px}body[data-page=""] #app .hero{margin-top:-76px;height:calc(112vw + 76px);min-height:506px;padding-top:calc(11vw + 76px)}.site-menu-panel{top:76px;height:calc(100vh - 76px)}.menu-backdrop{inset:76px 0 0}}
+@media(max-width:850px){.site-header{height:82px}.site-header>.wordmark{width:clamp(190px,32vw,260px)}.site-header .wordmark-image{height:78px;max-height:78px}body[data-page=""] #app .hero{margin-top:-82px;height:calc(58vw + 82px);min-height:452px;padding-top:calc(8vw + 82px)}.site-menu-panel{top:82px;height:calc(100vh - 82px)}.menu-backdrop{inset:82px 0 0}}
+@media(max-width:520px){.site-header{height:76px}.site-header>.wordmark{width:190px}.site-header .wordmark-image{height:72px;max-height:72px}body[data-page=""] #app .hero{margin-top:-76px;height:calc(112vw + 76px);min-height:506px;padding-top:calc(11vw + 76px)}.site-menu-panel{top:76px;height:calc(100vh - 76px)}.menu-backdrop{inset:76px 0 0}}
 
 /* Temporary public launch state: keep brand pages available while commerce is paused. */
 .store-pause-section{min-height:220px;display:grid;place-items:center;text-align:center;background:linear-gradient(90deg,#030303d9,#090909b9),url('assets/home-collection-4k.jpg') center 44%/cover}
